@@ -21,8 +21,6 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./blog-server/:/usr/src/app
-    ports:
-      - 3500:8080
     depends_on:
       - mongo
 
@@ -33,7 +31,16 @@ services:
       dockerfile: Dockerfile 
     volumes:
       - ./blog-client/:/usr/src/app
-    ports:
-      - 3000:80
     container_name: blogs-client
+
+  nginx:
+    image: nginx:1.20.1
+    volumes:
+      - ./nginx.prod.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - 8080:80
+    container_name: reverse-proxy
+    depends_on:
+      - app
+      - server
   

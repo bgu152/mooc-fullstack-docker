@@ -95,6 +95,7 @@ const userExtractor = async (
                 return response.status(401).json({ error: 'token invalid' });
             } else {
                 request.body.user = decodedToken.id;
+                console.log('userExtractor: ', request.body.user);
                 next();
             }
         } else {

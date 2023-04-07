@@ -17,15 +17,15 @@ const app = express();
 app.use(express.static('./react-build'));
 app.use(cors());
 app.use(express.json());
-app.use('/api/login', loginRouter);
-app.use('/api/users', userRouter);
+app.use('/login', loginRouter);
+app.use('/users', userRouter);
 
 if (process.env.NODE_ENV === 'test') {
     // app.use('/api/testing', (req: Request, res: Response) => {
     //     res.json({ message: 'ok' });
     // });
 
-    app.use('/api/testing', testingRouter);
+    app.use('/testing', testingRouter);
 }
 
 app.use('/api/health', (_req, res) => {
@@ -33,7 +33,7 @@ app.use('/api/health', (_req, res) => {
 });
 
 app.use(userExtractor);
-app.use('/api/blogs', blogRouter);
+app.use('/blogs', blogRouter);
 app.use(middleware.requestLogger);
 app.use(middleware.errorHandler);
 app.use(middleware.unknownEndpoint);

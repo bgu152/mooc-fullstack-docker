@@ -21,8 +21,8 @@
     },
     "scripts": {
         "start": "REACT_APP_BACKEND_URL=http://localhost:8080/api react-scripts start",
-        "dev": "REACT_APP_BACKEND_URL=http://localhost:3500/api react-scripts start",
-        "build": "REACT_APP_BACKEND_URL=http://localhost:3500/api react-scripts build",
+        "dev": "REACT_APP_BACKEND_URL=http://localhost:8080/api react-scripts start",
+        "build": "REACT_APP_BACKEND_URL=http://localhost:8080/api react-scripts build",
         "eject": "react-scripts eject",
         "eslint": "npx eslint ."
     },
