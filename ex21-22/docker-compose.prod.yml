@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+
+  mongo:
+    image: mongo
+    ports:
+      - 3456:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_DATABASE: blogs_database
+    volumes:
+      - ./blog-server/mongo_data:/data/db
+    container_name: blogs-mongo-dev
+
+  server:
+    image: blogs-server
+    build:
+      context: ./blog-server/
+      dockerfile: Dockerfile
+    volumes:
+      - ./blog-server/:/usr/src/app
+    ports:
+      - 3500:8080
+    depends_on:
+      - mongo
+
+  app:
+    image: blogs-client
+    build:
+      context: ./blog-client/ 
+      dockerfile: Dockerfile 
+    volumes:
+      - ./blog-client/:/usr/src/app
+    ports:
+      - 3000:80
+    container_name: blogs-client
+  

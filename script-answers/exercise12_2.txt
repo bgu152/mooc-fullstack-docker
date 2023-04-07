@@ -1,0 +1,15 @@
+Script started on 2023-04-04 11:38:58+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+[?2004h]0;erik@linux: ~/Git/mooc-docker/test[01;32merik@linux[00m:[01;34m~/Git/mooc-docker/test[00m$ [7mdocker container run -it ubuntu bash[27mdocker container run -it ubuntu bash
+[?2004lUnable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+
+[1A[2K2ab09b027e7f: Pulling fs layer [1B[1A[2K2ab09b027e7f: Downloading  310.6kB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  1.235MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  2.169MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  3.705MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  4.635MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading   5.88MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  7.424MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading   8.67MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  9.902MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  11.15MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  12.38MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  13.63MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  14.86MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading   16.1MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  17.33MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  18.57MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  19.81MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  21.05MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading   22.6MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  23.84MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  25.07MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  26.31MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  27.54MB/29.53MB[1B[1A[2K2ab09b027e7f: Downloading  28.76MB/29.53MB[1B[1A[2K2ab09b027e7f: Verifying Checksum [1B[1A[2K2ab09b027e7f: Download complete [1B[1A[2K2ab09b027e7f: Extracting  327.7kB/29.53MB[1B[1A[2K2ab09b027e7f: Extracting  10.16MB/29.53MB[1B[1A[2K2ab09b027e7f: Extracting  24.25MB/29.53MB[1B[1A[2K2ab09b027e7f: Extracting  29.53MB/29.53MB[1B[1A[2K2ab09b027e7f: Pull complete [1BDigest: sha256:67211c14fa74f070d27cc59d69a7fa9aeff8e28ea118ef3babc295a0428a6d21
+Status: Downloaded newer image for ubuntu:latest
+[?2004h]0;root@0ddc120154ef: /root@0ddc120154ef:/# mkdir /usr/src/app
+[?2004l[?2004h]0;root@0ddc120154ef: /root@0ddc120154ef:/# touch /usr/src/app/index.js
+[?2004l[?2004h]0;root@0ddc120154ef: /root@0ddc120154ef:/# [Kexit
+[?2004lexit
+[?2004h]0;erik@linux: ~/Git/mooc-docker/test[01;32merik@linux[00m:[01;34m~/Git/mooc-docker/test[00m$ exit
+[?2004lexit
+
+Script done on 2023-04-04 11:40:31+03:00 [COMMAND_EXIT_CODE="0"]

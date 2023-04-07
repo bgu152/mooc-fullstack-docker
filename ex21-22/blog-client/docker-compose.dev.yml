@@ -1,0 +1,11 @@
+services:
+  app:
+    image: blogs-client-dev
+    build:
+      context: . 
+      dockerfile: dev.Dockerfile 
+    volumes:
+      - ./:/usr/src/app
+    ports:
+      - 3000:3000
+    container_name: blogs-client-dev
